@@ -18,7 +18,7 @@ hr_alternative <- 1  # For non-inferiority, H1 HR=1 means no difference
 # Will compute below after calculating hazard rates.
 
 # Type I and Type II error
-alpha <- 0.025  # One-sided Type I error
+alpha <- 0.05  # One-sided Type I error
 beta <- 0.2     # Type II error (80% power)
 
 # Randomization ratio
