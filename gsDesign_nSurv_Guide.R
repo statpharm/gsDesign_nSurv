@@ -30,7 +30,8 @@ minfup <- 2         # 2 years minimum follow-up after enrollment ends
 total_duration <- T_enroll + minfup
 
 # Uniform enrollment rate
-gamma <- 1
+# gamma <- 1
+gamma <- c(1,1) ## for 2 years enrollment
 
 ###############################################
 # Compute hazard rates and hazard ratio
@@ -55,7 +56,7 @@ MST_control <- log(2) / control_haz_rate
 library(gsDesign)
 
 ss <- nSurv(
-  R = T_enroll,
+  R = c(1,1), ## 2 years uniform enrollment
   gamma = gamma,
   eta = eta,
   minfup = minfup,
